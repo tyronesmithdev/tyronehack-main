@@ -82,32 +82,22 @@ TilesetTesting_EventScript_WelcomeSign::
 	return
 
 
+	.align 2
 # 51 "data/maps/TilesetTesting/scripts.pory"
-
+PokeStopTest_Mart:
 # 52 "data/maps/TilesetTesting/scripts.pory"
-
+	.2byte ITEM_POKE_BALL
 # 53 "data/maps/TilesetTesting/scripts.pory"
-.align 2
+	.2byte ITEM_POTION
 # 54 "data/maps/TilesetTesting/scripts.pory"
-PokeStopTest_Mart::
+	.2byte ITEM_RARE_CANDY
 # 55 "data/maps/TilesetTesting/scripts.pory"
-    .2byte ITEM_POKE_BALL
+	.2byte ITEM_REPEL
 # 56 "data/maps/TilesetTesting/scripts.pory"
-    .2byte ITEM_POTION
+	.2byte ITEM_FULL_HEAL
 # 57 "data/maps/TilesetTesting/scripts.pory"
-    .2byte ITEM_RARE_CANDY
-# 58 "data/maps/TilesetTesting/scripts.pory"
-    .2byte ITEM_REPEL
-# 59 "data/maps/TilesetTesting/scripts.pory"
-    .2byte ITEM_FULL_HEAL
-# 60 "data/maps/TilesetTesting/scripts.pory"
-    .2byte ITEM_OLD_ROD
-# 61 "data/maps/TilesetTesting/scripts.pory"
-    .2byte ITEM_NONE
-# 62 "data/maps/TilesetTesting/scripts.pory"
-    release
-# 63 "data/maps/TilesetTesting/scripts.pory"
-    end
+	.2byte ITEM_OLD_ROD
+	.2byte ITEM_NONE
 
 PokeStopTest_Nurse_Text_0:
 # 8 "data/maps/TilesetTesting/scripts.pory"
@@ -115,7 +105,7 @@ PokeStopTest_Nurse_Text_0:
 
 PokeStopTest_Nurse_Text_1:
 # 18 "data/maps/TilesetTesting/scripts.pory"
-	.string "All set. Stop by anytime!$"
+	.string "All set.\pStop by anytime!$"
 
 PokeStopTest_Nurse_Text_2:
 # 24 "data/maps/TilesetTesting/scripts.pory"
