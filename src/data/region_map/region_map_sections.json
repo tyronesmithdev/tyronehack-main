@@ -1234,6 +1234,10 @@
     {
       "id": "MAPSEC_SHADE_TOWN",
       "name": "SHADE TOWN"
+    },
+    {
+      "id": "MAPSEC_TILESET_TESTING",
+      "name": "TILE TOWN"
     }
   ]
 }

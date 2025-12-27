@@ -841,3 +841,14 @@ const struct Tileset gTileset_ShadyForest =
     .metatileAttributes = gMetatileAttributes_ShadyForest,
     .callback = NULL,
 };
+
+const struct Tileset gTileset_GeneralTyroneAlpha =
+{
+    .isCompressed = TRUE,
+    .isSecondary = FALSE,
+    .tiles = gTilesetTiles_GeneralTyroneAlpha,
+    .palettes = gTilesetPalettes_GeneralTyroneAlpha,
+    .metatiles = gMetatiles_GeneralTyroneAlpha,
+    .metatileAttributes = gMetatileAttributes_GeneralTyroneAlpha,
+    .callback = NULL,
+};

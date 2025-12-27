@@ -1,0 +1,59 @@
+mapscripts TilesetTesting_MapScripts {
+
+}
+
+script PokeStopTest_Nurse{
+    lock
+    faceplayer
+    msgbox("Would you like to heal your party?", MSGBOX_YESNO)
+    if(var(VAR_RESULT) == YES){
+        setrespawn(HEAL_LOCATION_TILESET_TESTING)
+        incrementgamestat(GAME_STAT_USED_POKECENTER)
+        fadescreenswapbuffers(FADE_TO_BLACK)
+	    playfanfare(MUS_HEAL)
+	    waitfanfare
+	    special(HealPlayerParty)
+	    callnative (UpdateFollowingPokemon)
+	    fadescreenswapbuffers(FADE_FROM_BLACK)
+        msgbox("All set.\pStop by anytime!")
+        waitmessage
+        release
+        end
+    }
+    else{
+        msgbox("Have a good one!", MSGBOX_NPC)
+    }
+}
+script PokeStopTest_Mart_Employee{
+    lock
+    faceplayer
+    message("What can I get for you?")
+    waitmessage
+    pokemart(PokeStopTest_Mart)
+    msgbox("Thanks for stopping by!")
+    release
+    end
+
+}
+
+script TilesetTesting_EventScript_PokeStopSign {
+    lockall
+    msgbox("The PokeStop:")
+    msgbox("Your one-stop shop!")
+    releaseall
+}
+script TilesetTesting_EventScript_WelcomeSign {
+    lockall
+    msgbox("First Tileset Prototype")
+    releaseall
+}
+
+mart PokeStopTest_Mart {
+    ITEM_POKE_BALL
+    ITEM_POTION
+    ITEM_RARE_CANDY
+    ITEM_REPEL
+    ITEM_FULL_HEAL
+    ITEM_OLD_ROD
+    ITEM_NONE
+}

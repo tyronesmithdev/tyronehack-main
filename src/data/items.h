@@ -179,7 +179,7 @@ const struct Item gItemsInfo[] =
     [ITEM_POKE_BALL] =
     {
         .name = ITEM_NAME("Poké Ball"),
-        .price = 200,
+        .price = 50,
         .description = COMPOUND_STRING(
             "A tool used for\n"
             "catching wild\n"
@@ -1030,7 +1030,7 @@ const struct Item gItemsInfo[] =
     [ITEM_FULL_HEAL] =
     {
         .name = ITEM_NAME("Full Heal"),
-        .price = (I_PRICE >= GEN_7) ? 400 : 600,
+        .price = (I_PRICE >= GEN_7) ? 100 : 100,
         .description = sFullHealDesc,
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_STATUS_RECOVERY,
@@ -1996,7 +1996,7 @@ const struct Item gItemsInfo[] =
     {
         .name = ITEM_NAME("Rare Candy"),
         .pluralName = ITEM_PLURAL_NAME("Rare Candies"),
-        .price = (I_PRICE >= GEN_7) ? 10000 : 4800,
+        .price = (I_PRICE >= GEN_7) ? 1 : 1,
         .description = COMPOUND_STRING(
             "Raises the level\n"
             "of a Pokémon by\n"
@@ -2235,7 +2235,7 @@ const struct Item gItemsInfo[] =
     [ITEM_REPEL] =
     {
         .name = ITEM_NAME("Repel"),
-        .price = (I_PRICE >= GEN_7) ? 400 : 350,
+        .price = (I_PRICE >= GEN_7) ? 10 : 10,
         .holdEffectParam = 100,
         .description = COMPOUND_STRING(
             "Repels weak wild\n"
@@ -12632,7 +12632,7 @@ const struct Item gItemsInfo[] =
     [ITEM_OLD_ROD] =
     {
         .name = ITEM_NAME("Old Rod"),
-        .price = 0,
+        .price = 1,
         .description = COMPOUND_STRING(
             "Use by any body of\n"
             "water to fish for\n"

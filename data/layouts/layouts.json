@@ -4420,6 +4420,16 @@
       "secondary_tileset": "gTileset_ShadyForest",
       "border_filepath": "data/layouts/ShadeTown/border.bin",
       "blockdata_filepath": "data/layouts/ShadeTown/map.bin"
+    },
+    {
+      "id": "LAYOUT_TILESET_TESTING",
+      "name": "TilesetTesting_Layout",
+      "width": 30,
+      "height": 30,
+      "primary_tileset": "gTileset_GeneralTyroneAlpha",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/TilesetTesting/border.bin",
+      "blockdata_filepath": "data/layouts/TilesetTesting/map.bin"
     }
   ]
 }
